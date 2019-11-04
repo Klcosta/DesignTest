@@ -1,0 +1,290 @@
+body{
+    margin-right: 0px;
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-left: 0px;
+}
+
+select:not([multiple]) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-position: right 50%;
+    background-repeat: no-repeat;
+    background-image: url(../images/triangle2.png);
+}
+
+.backgroundImage{
+    position: absolute;
+    top: 0px;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: 50%, 60%;
+    width: 100%;
+    height: 150%;
+    z-index: -2;
+}
+
+.landingpage{
+    height: 100vh;
+}
+
+.logo{
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.header{
+    position: absolute;
+    right: 100px;
+    bottom: 135px;
+    width: 65%;
+    font-family: open-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    color: #fcb23b;
+    text-align: right;
+    line-height: 125%;
+    text-shadow: 2px 2px 2px black;
+}
+
+.triangle{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25px;
+    width: 150px;
+
+}
+
+.box{
+    z-index: 20;
+    background-color: rgba(81, 197, 225, 0.9);
+    margin: 35px;
+    /* height: 400px; */
+    display:flex;
+}
+
+
+.image2 {
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: -75px;
+}
+
+.text {
+    width: 50%;
+    padding: 12.5px;
+    font-family: open-sans, sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+.input {
+    color: #51c5e1;
+    width: 45%;
+    margin-top: 30px;
+    font-family: open-sans, sans-serif;
+    font-size: 20px;
+    border-radius: 0px !important;
+    border-width: 0px;
+    padding: 6px;
+    border-bottom-color: #666566;
+    border-bottom-width: 2px;
+}
+
+.selecter {
+    color: #51c5e1;
+    width: 47%;
+    margin-top: 30px;
+    font-family: open-sans, sans-serif;
+    font-size: 20px;
+    border-radius: 0px !important;
+    border-width: 0px;
+    padding: 6px;
+    border-bottom-color: #666566;
+    border-bottom-width: 2px;
+}
+
+.submit{
+    color: white;
+    margin-top: 30px;
+    font-family: open-sans, sans-serif;
+    font-size: 20px;
+    border-radius: 0px !important;
+    border-width: 0px;
+    padding: 6px;
+    background-color: #fcb23b;
+    border-bottom-color: #666566;
+    border-bottom-width: 2px;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+}
+
+.form2{
+    display:none;
+}
+
+@media only screen and (max-width: 1400px){ 
+        .image2 {
+            width: 70%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: -75px;
+        }
+
+        .input {
+            font-size: 18px;
+        }
+
+        .selecter {
+            font-size: 18px;
+        }
+
+        .text {
+            font-size: 22px;
+        }
+}
+
+@media only screen and (max-width: 1270px){ 
+    .image2 {
+        width: 70%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: -75px;
+    }
+
+    .input {
+        font-size: 16px;
+    }
+
+    .selecter {
+        font-size: 16px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 1130px){ 
+    .image2 {
+        width: 80%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        align-self: flex-end;
+    }
+
+    .input {
+        font-size: 16px;
+    }
+
+    .selecter {
+        font-size: 16px;
+        width: 46%;
+    }
+
+    .right {
+        margin-right: 20px;
+    }
+
+    .left {
+        margin-left: 20px;
+    }
+
+    .form {
+        display: none;
+    }
+
+    .box {
+        flex-direction: column;
+    }
+
+    .text {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .form2 {
+        display:block;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 1130px){ 
+
+    .input{
+        width: 40%;
+    }
+
+    .selecter{
+        width: 42%;
+    }
+
+    .header{
+        font-size: 40px;
+    }
+
+}
+
+@media only screen and (max-width: 600px){ 
+
+    .header{
+        right: 50px;
+        bottom: 95px;
+    }
+
+    .box{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .logo{
+        width: 100px;
+    }
+
+}
+
+@media only screen and (max-width: 430px){ 
+
+    .input{
+        width: 90%;
+    }
+
+    .selecter{
+        width: 93%;
+    }
+
+    .header{
+        font-size: 30px;
+        right: 40px;
+    }
+
+    .form2{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right{
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .left{
+        margin: auto;
+        margin-top: 20px;
+    }
+
+}
